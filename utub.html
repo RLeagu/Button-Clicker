@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Clicker</title>
+</head>
+<body>
+	<h1>Button Clicker</h1>
+	<p>Click the button to increase the counter:</p>
+	<button id="click-button" onclick="increaseCounter()">Click Me!</button>
+	<p>Counter: <span id="counter">0</span></p>
+
+	<script>
+		var counter = 0;
+		function increaseCounter() {
+			counter++;
+			document.getElementById("counter").innerHTML = counter;
+		}
+	</script>
+</body>
+</html>
